@@ -1,0 +1,292 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  min-height: 80vh;
+  width: 100%;
+  /* https://greepx.com/wp-content/uploads/2020/02/1581859215_982_crows-wallpapers.jpg */ 
+  background-image: linear-gradient(rgba(2,5,20,0.6), rgba(2,5,20,0.6)), url(https://img.myloview.com/stickers/mixed-bird-seeds-millet-surface-background-and-texture-700-189860567.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* https://th.bing.com/th/id/OIP.keNcAbpJWx30jhH0Rrx_0wHaE8?pid=ImgDet&rs=1 */
+/* https://c4.wallpaperflare.com/wallpaper/19/214/453/depth-ocean-ripples-sea-wallpaper-preview.jpg */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 100px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: rgb(172, 43, 43);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+.crow-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.crow-btn:hover {
+  border: 1px solid rgb(172, 43, 43);
+  background: rgb(172, 43, 43);
+  transition: 1s;
+}
+.header nav i {
+  display: none;
+}
+@media(max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: rgb(172, 43, 43);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .header nav i {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+/******************value********************/
+.value {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.value-col {
+  flex-basis: 22%;
+  background: rgb(252, 233, 233);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.value-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+@media(max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/******************discord********************/
+
+.discord {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.discord a {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+}
+
+/******************cta********************/
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media.npr.org/assets/img/2019/12/04/20191119-crowstills-frost-news2-d6527583172e12a16b867920163d8aff1f3795d8.jpg?s=6);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media(max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}
+
+/******************footer********************/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: rgb(172, 43, 43);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/******************About Us********************/
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://4.bp.blogspot.com/-gGyJCPa9bsg/XN8veuSGvdI/AAAAAAAATTI/PgtB6__rPYsFxJy1V4O2XYuJsi94bUsJQCEwYBhgL/s1600/20190512-EB2R0479.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+@media(min-width: 900px) {
+  .fa-solid {
+    display: none !important;
+  }
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+}
+
+.about-btn {
+  border: 1px solid rgb(172, 43, 43);
+  background: transparent;
+  color: rgb(172, 43, 43);
+}
+
+.about-btn:hover {
+  color: white;
+}
