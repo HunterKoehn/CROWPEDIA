@@ -344,3 +344,115 @@ h3 {
     border: 0;
   }
 }
+
+/******************Contact Us********************/
+
+.contact-us{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+.contact-us:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(https://st.depositphotos.com/1550726/2151/i/600/depositphotos_21510413-stock-photo-dark-forest-in-the-evening.jpg) no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: white;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.left{
+	background: url(https://northernwoodlands.org/images/made/images/articles/TOS_Crow_web_644_700_65.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+.right{
+	padding: 25px 40px;
+}
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(172, 43, 43);
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+textarea{
+	min-height: 150px;
+}
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgb(172, 43, 43);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+.btn:hover{
+    background-color: rgb(172, 43, 43);
+}
+.field:focus{
+    border: 2px solid rgb(172, 43, 43);
+    background-color: #fff;
+}
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+.contact-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://t1.ea.ltmcdn.com/en/posts/8/1/0/the_language_of_crows_1018_0_600.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.contact-header h1 {
+  margin-top: 100px;
+}
