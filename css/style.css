@@ -290,3 +290,143 @@ h3 {
 .about-btn:hover {
   color: white;
 }
+
+/******************Gallery********************/
+
+.gall-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://i.pinimg.com/originals/f1/bf/45/f1bf458e9daabca52b8d51f182816af3.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.gall-header h1 {
+  margin-top: 100px;
+}
+
+.gallery {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.gall-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.gall-col img {
+  width: 600px;
+  height: 500px;
+  object-fit: scale-down;
+}
+
+.gall-col h2 {
+  padding-top: 0;
+  padding-bottom: 2%;
+}
+
+.gall-btn {
+  border: 1px solid rgb(172, 43, 43);
+  background: transparent;
+  color: rgb(172, 43, 43);
+}
+
+.gall-btn:hover {
+  color: white;
+}
+
+.one {
+  padding-top: 40px;
+}
+.two {
+  padding-top: 380px;
+}
+.three {
+  padding-top: 450px;
+}
+.four {
+  padding-top: 390px;
+}
+.five {
+  padding-top: 450px;
+}
+.six {
+  padding-top: 420px;
+}
+.seven {
+  padding-top: 430px;
+}
+.eight {
+  padding-top: 360px;
+}
+.nine {
+  padding-top: 470px;
+}
+.ten {
+  padding-top: 400px;
+}
+.eleven {
+  padding-top: 490px;
+}
+.twelve {
+  padding-top: 380px;
+}
+.thirteen {
+  padding-top: 370px;
+}
+.fourteen {
+  padding-top: 460px;
+}
+.fifteen {
+  padding-top: 420px;
+}
+.sixteen {
+  padding-top: 420px;
+}
+.seventeen {
+  padding-top: 420px;
+}
+.eighteen {
+  padding-top: 415px;
+}
+.nineteen {
+  padding-top: 420px;
+}
+.twenty {
+  padding-top: 380px;
+}
+.twentyone {
+  padding-top: 520px;
+}
+.twentytwo {
+  padding-top: 350px;
+}
+.twentythree {
+  padding-top: 420px;
+}
+.twentyfour {
+  padding-top: 420px;
+}
+.twentyfive {
+  padding-top: 480px;
+}
+.twentysix {
+  padding-top: 350px;
+}
+.twentyseven {
+  padding-top: 410px;
+}
+.twentyeight {
+  padding-top: 455px;
+}
+.twentynine {
+  padding-top: 400px;
+}
+.thirty {
+  padding-top: 425px;
+}
