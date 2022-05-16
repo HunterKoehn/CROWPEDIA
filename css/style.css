@@ -553,3 +553,11 @@ textarea{
 .home {
   padding-bottom: 60px;
 }
+@media(max-width: 700px) {
+  .guide p {
+    width: 100%;
+  }
+  .guide-content {
+    border: none;
+  }
+}
