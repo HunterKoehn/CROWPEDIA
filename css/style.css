@@ -290,7 +290,22 @@ h3 {
 .about-btn:hover {
   color: white;
 }
-
+.about-col a {
+  text-decoration: none;
+  color: black;
+}
+.about-col a:visited {
+  text-decoration: none;
+  color: black;
+}
+.about-col a:hover {
+  text-decoration: none;
+  color: black;
+}
+.about-col a:active {
+  text-decoration: none;
+  color: black;
+}
 /******************Gallery********************/
 
 .gall-header {
@@ -345,6 +360,42 @@ h3 {
   }
 }
 
+.gallery a {
+  text-decoration: none;
+  color: black;
+}
+.galery a:visited {
+  text-decoration: none;
+  color: black;
+}
+.gallery a:hover {
+  text-decoration: none;
+  color: black;
+}
+.gallery a:active {
+  text-decoration: none;
+  color: black;
+}
+
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(172, 43, 43); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#topBtn:hover {
+  background-color: rgb(3, 3, 3); 
+}
 /******************Contact Us********************/
 
 .contact-us{
@@ -455,4 +506,50 @@ textarea{
 }
 .contact-header h1 {
   margin-top: 100px;
+}
+
+/******************Guide********************/
+
+.guide-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://petkeen.com/wp-content/uploads/2021/06/Crows-and-Ravens_Capri23auto_Pixabay-760x507.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.guide-header h1 {
+  margin-top: 100px;
+}
+.guide-content {
+  margin: auto;
+  width: 65%;
+  border: 3px solid black;
+}
+.guide h1 {
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.guide-content h4 {
+  text-align: center;
+  padding-top: 0;
+}
+.guide p {
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.table {
+  padding-top: 50px;
+}
+.spotting {
+  padding-top: 60px;
+}
+.home {
+  padding-bottom: 60px;
 }
